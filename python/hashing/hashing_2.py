@@ -6,9 +6,6 @@ def hashing_function(string,character):
       count +=1
   return count
 
-
-
-
 def main():
   s = input("Enter your string: ")
   c = input("Enter your character: ")
