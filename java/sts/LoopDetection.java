@@ -1,16 +1,24 @@
 
 import java.util.HashSet;
 
-class Node{
-  int data;
-  Node next;
+// class Node{
+//   int data;
+//   Node next;
 
-  Node(int data){
-    this.data  = data;
-    this.next = null;
-  }
-}
+//   Node(int data){
+//     this.data  = data;
+//     this.next = null;
+//   }
+// }
 public class LoopDetection {
+    static class Node{
+      int data;
+      Node next;
+      Node(int data){
+        this.data = data;
+        this.next = null;
+      }
+    }
     public static boolean floydAlgo(Node head){
       Node slow = head;
       Node fast = head ;
